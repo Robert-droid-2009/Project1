@@ -38,7 +38,94 @@
             </nav>
 
             <main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teszt</title>
+    <link rel="stylesheet" href="test.css">
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+        function kontraszt() {
+            var element = document.body;
+            element.classList.toggle("k-mode");
+        }
+    </script>
+</head>
 
+<body>
+    <header>
+           <button onclick="myFunction()" class="button">Sötét mód</button>
+        <button onclick="kontraszt()" class="button">Kontraszt mód</button>
+        <h1>Elégedetségi kérdőív</h1>
+        <p>Kérlek válaszolj az alábbi kérdésekre:</p>
+    </header>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>1. kérdés</legend>
+            <label>Mennyire elégedett a weboldallal?</label><br>
+            <input type="radio" name="k1" value="a"> Nagyon<br>
+            <input type="radio" name="k1" value="b"> Elégedett<br>
+            <input type="radio" name="k1" value="c"> Kicsitsem<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. kérdés</legend>
+            <label>Hány oldalból állt a projekt?</label><br>
+            <input type="number" name="k2">
+        </fieldset>
+
+        <fieldset>
+            <legend>3. kérdés</legend>
+            <label>Melyik oldal vont a kedvence?</label><br>
+            <select name="k3">
+                <option value="a">Galéira</option>
+                <option value="b">Történet</option>
+                <option value="c">Bármi más csak haladjunk</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>4. kérdés</legend>
+            <label>Szeretne ilyen programokon részt venni?</label><br>
+            <input type="checkbox" name="q5" value="python"> Futás<br>
+            <input type="checkbox" name="q5" value="html"> Gyaloglás<br>
+            <input type="checkbox" name="q5" value="css"> TV nézés<br>
+            <input type="checkbox" name="q5" value="javascript"> egyiksem<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>5. kérdés</legend>
+            <label>Írj egy mondatot magadról:</label><br>
+            <textarea name="k5" rows="3" cols="50"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>6. kérdés</legend>
+            <label>Kik készítették az oldalt?</label><br>
+            <input type="radio" name="k6" value="a"> nem tudom<br>
+            <input type="radio" name="k6" value="b"> nem érdekel<br>
+            <input type="radio" name="k6" value="c"> fogalmam sincs<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>7. kérdés</legend>
+            <label>Mi a neved?</label><br>
+            <input type="text" name="k7">
+        </fieldset>
+
+        <fieldset>
+            <legend>8. kérdés</legend>
+            <label>Melyik a helyes email cím?</label><br>
+            <input type="email" name="k8">
+        </fieldset>
+
+        <br>
+        <button type="submit">Beküldés</button>
+    </form>
+</body>
             </main>
 
             <footer>
